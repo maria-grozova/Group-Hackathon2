@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const questionArea = document.getElementById("questions");
     const answerArea = document.getElementById("answers");
     const answerCard = document.getElementsByClassName("answer-card");
-    const startBtn = document.getElementById("");
+    const startBtn = document.getElementById("start-btn");
     const submitBtn = document.getElementById("submit-button");
     const nextBtn = document.getElementById("next-button");
     const restartBtn = document.getElementById("");
@@ -22,9 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     console.log("page loaded");
+    const dialog = document.querySelector("dialog");
     
+    dialog.showModal();
+      
 
-    submitBtn.addEventListener("click", runQuiz());
+    startBtn.addEventListener("click", runQuiz());
 
 });
 
@@ -38,5 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function runQuiz() {
     quizActive = true;
+    const dialog = document.querySelector("dialog");
+    dialog.classList.add("hide")
     console.log("quiz started");
 }
