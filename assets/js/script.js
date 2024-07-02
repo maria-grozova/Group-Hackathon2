@@ -7,26 +7,26 @@
 // Wait for DOM to finish loading before running the quiz
 // Set variables for game elements
 
-document.addEventListener("DOMContentLoaded", function()) {
+document.addEventListener("DOMContentLoaded", function() {
 
-    const gameArea = document.getElementById("");
-    const questionArea = document.getElementById("");
-    const answerArea = document.getElementById("");
-    const answerCard = document.getElementsByClassName("");
+    const quizArea = document.getElementById("quiz-area");
+    const questionArea = document.getElementById("questions");
+    const answerArea = document.getElementById("answers");
+    const answerCard = document.getElementsByClassName("answer-card");
     const startBtn = document.getElementById("");
-    const submitBtn = document.getElementById("");
-    const nextBtn = document.getElementById("");
+    const submitBtn = document.getElementById("submit-button");
+    const nextBtn = document.getElementById("next-button");
     const restartBtn = document.getElementById("");
-    const progressCount = document.getElementById("");
+    const progressCount = document.getElementById("question-count");
     let quizActive = false;
 
-    if (quizActive === false) {
+    
+    console.log("page loaded");
+    
 
-    }
+    submitBtn.addEventListener("click", runQuiz());
 
-    startBtn.addEventListener("click", runQuiz());
-
-}
+});
 
 // Questions
 
@@ -38,4 +38,5 @@ document.addEventListener("DOMContentLoaded", function()) {
 
 function runQuiz() {
     quizActive = true;
+    console.log("quiz started");
 }
