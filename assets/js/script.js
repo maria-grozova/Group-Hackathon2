@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const questionArea = document.getElementById("questions");
     const answerArea = document.getElementById("answers");
     const answerCard = document.getElementsByClassName("answer-card");
-    const startBtn = document.getElementById("start-btn");
+    let startBtn = document.getElementById("start-btn");
     const submitBtn = document.getElementById("submit-button");
     const nextBtn = document.getElementById("next-button");
-    const restartBtn = document.getElementById("");
+    //const restartBtn = document.getElementById("");
     const progressCount = document.getElementById("question-count");
     let quizActive = false;
 
@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
     dialog.showModal();
       
 
-    startBtn.addEventListener("click", runQuiz());
+    startBtn.addEventListener("click", runQuiz);
+    
+
 
 });
 
@@ -41,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function runQuiz() {
     quizActive = true;
-    const dialog = document.querySelector("dialog");
-    dialog.classList.add("hide")
+   let dialog = document.querySelector("dialog");
+    dialog.classList.add("hide");
     console.log("quiz started");
 }
