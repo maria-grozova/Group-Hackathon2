@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const questionArea = document.getElementById("questions");
     const answerArea = document.getElementById("answers");
     const answerCard = document.getElementsByClassName("answer-card");
-    const startBtn = document.getElementById("start-btn");
+    let startBtn = document.getElementById("start-btn");
     const submitBtn = document.getElementById("submit-button");
     const nextBtn = document.getElementById("next-button");
     const restartBtn = document.getElementById("");

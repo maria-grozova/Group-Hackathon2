@@ -57,6 +57,6 @@ footer {
     text-align: right;
 }
 
-#landing-page {
-    /*display: none;*/
+.hide {
+    display: none;
 }
