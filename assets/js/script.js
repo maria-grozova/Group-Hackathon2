@@ -236,7 +236,7 @@ function displayResultPage(personality) {
     printResult.innerText = dogType;
     results.style.display = "inline-block";
     body.background = "none";
-    body.backgroundColor = "#b89832";
+    body.backgroundColor = "#FEF9EF";
     body.backgroundSize = "100% auto";
 }
 
