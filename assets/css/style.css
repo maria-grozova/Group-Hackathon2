@@ -113,34 +113,17 @@ h2 {
     display: none;	
 }
 
-/* DOGS */	
+/* DOGS */
 /* party-dog */
 .party-dog {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
     text-align: center;
     color: #424B54; /* Charcoal text color */
-    cursor: pointer;
 }
 .party-dog h1 {
     font-size: 2em;
-    animation: blinker 0.5s linear infinite;
     font-family: 'Koulen', sans-serif;
-}
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
-.party-dog a {
-    color: green;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin: 0 10px 0 20px;
-}
-.party-dog a:hover {
-    background-color: #424B54;
-    cursor: pointer;
 }
 .party-dog div[id^='img'] {
     border: solid #424B54;
@@ -148,15 +131,12 @@ h2 {
     width: 80%;
     display: inline-block;
 }
-.party-dog #img1 {
-    content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9zZHcwd3A0enplaWEzcGt6dHB1d3huODJ6aW56M2JvajRwc3JscCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eB4iKBxl84RGZdF65g/giphy.gif');
-}
 .party-dog #desc1::after {
     font-size: 0.9em;
     content: "You are a party dog and are the life and soul of a party and always wants to go out...";
 }
 
-/* food-dog styles */
+/* food-dog */
 .food-dog {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
@@ -165,18 +145,7 @@ h2 {
 }
 .food-dog h1 {
     font-size: 2em;
-    animation: blinker 0.5s linear infinite;
     font-family: 'Koulen', sans-serif;
-}
-.food-dog a {
-    color: green;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin: 0 10px 0 20px;
-}
-.food-dog a:hover {
-    background-color: #424B54;
-    cursor: pointer;
 }
 .food-dog div[id^='img'] {
     border: solid #424B54;
@@ -184,6 +153,161 @@ h2 {
     width: 80%;
     display: inline-block;
 }
-.food-dog #img1 {
-    content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjc3YmN5');
+.food-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a food dog and love trying out new restaurants and cuisines.";
+}
+
+/* fashion-dog */
+.fashion-dog {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #424B54; /* Charcoal text color */
+}
+.fashion-dog h1 {
+    font-size: 2em;
+    font-family: 'Koulen', sans-serif;
+}
+.fashion-dog div[id^='img'] {
+    border: solid #424B54;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.fashion-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a fashion dog and always stay on top of the latest trends.";
+}
+
+/* surf-dog */
+.surf-dog {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #424B54; /* Charcoal text color */
+}
+.surf-dog h1 {
+    font-size: 2em;
+    font-family: 'Koulen', sans-serif;
+}
+.surf-dog div[id^='img'] {
+    border: solid #424B54;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.surf-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a surf dog and love catching waves and spending time at the beach.";
+}
+
+/* dev-dog */
+.dev-dog {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #424B54; /* Charcoal text color */
+}
+.dev-dog h1 {
+    font-size: 2em;
+    font-family: 'Koulen', sans-serif;
+}
+.dev-dog div[id^='img'] {
+    border: solid #424B54;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.dev-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a dev dog and love coding and building new projects.";
+}
+
+/* business-dog */
+.business-dog {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #424B54; /* Charcoal text color */
+}
+.business-dog h1 {
+    font-size: 2em;
+    font-family: 'Koulen', sans-serif;
+}
+.business-dog div[id^='img'] {
+    border: solid #424B54;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.business-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a business dog and have a sharp mind for the corporate world.";
+}
+
+/* sport-dog */
+.sport-dog {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #424B54; /* Charcoal text color */
+}
+.sport-dog h1 {
+    font-size: 2em;
+    font-family: 'Koulen', sans-serif;
+}
+.sport-dog div[id^='img'] {
+    border: solid #424B54;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.sport-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a sport dog and love staying active and playing sports.";
+}
+
+/* artist-dog */
+.artist-dog {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #424B54; /* Charcoal text color */
+}
+.artist-dog h1 {
+    font-size: 2em;
+    font-family: 'Koulen', sans-serif;
+}
+.artist-dog div[id^='img'] {
+    border: solid #424B54;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.artist-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are an artist dog and love expressing creativity through art.";
+}
+
+/* snoop-dog */
+.snoop-dog {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #424B54; /* Charcoal text color */
+}
+.snoop-dog h1 {
+    font-size: 2em;
+    font-family: 'Koulen', sans-serif;
+}
+.snoop-dog div[id^='img'] {
+    border: solid #424B54;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.snoop-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a snoop dog and have a laid-back, chill attitude.";
 }
