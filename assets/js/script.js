@@ -54,7 +54,7 @@ const answerText = [
     ["The most social boi", "A chonker", "Itty bitty boi", "Adorable pupper",                  // q7 answers
      "A cat", "Big boi", "Speedy boi", "Floofer", "I choose all of them"],                    
     ["Facebook", "Instagram", "TikTok", "I don't like social media",                           // q8 answers
-     "Reddit", "LinkedIn", "You Tube", "Twitch", "SnapchaT"],                                 
+     "Reddit", "LinkedIn", "YouTube", "Twitch", "SnapchaT"],                                 
     ["Ibiza", "Italy", "Paris", "Hawaii", "San Francisco", "New York City",                    // q9 answers
      "Skiing in the Alps", "A quiet retreat in the countryside", "Long Beach, Cali (Fo Sho')"],
     ["Epic", "Foodie", "Easy Breezy Beautiful", "Far Out", "Logical", "Successful",            // q10 answers
