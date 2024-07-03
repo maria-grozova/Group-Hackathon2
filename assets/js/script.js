@@ -12,7 +12,7 @@
 						0, 	//business dog
                         0,  //sport dog
                         0,  //artist dog
-                        0   //snoop dog
+                        0   //snoop dogg
                     ];
                 
 	let tempStats = userStats; //Holds stat increases relating to user selection
@@ -73,7 +73,7 @@
                                     "Eat, Pray, Eat", 
                                     "Fierce, Fresh and Fabulous",
                                     "Amped for Life",
-                                    "<Element> of Surprise",
+                                    "Element of Surprise",
                                     "Path to Ultimate Success",
                                     "Ultimate Win: One Pint at a Time",
                                     "Making Your Joy",
@@ -119,9 +119,9 @@
                                     "I don't like social media",
                                     "Reddit",
                                     "LinkedIn",
-                                    "You Tube",
+                                    "YouTube",
                                     "Twitch",
-                                    "SnapchaT"],							
+                                    "Snapchat"],							
                                     
 								//question 9 answers								
                                 [	"Ibiza", 				
@@ -463,13 +463,13 @@
 				printResult.innerText = "artist-dog";
 				break;
 
-            case 8:		//snoop dog
+            case 8:		//snoop dogg
 				results.style.display = "inline-block";
-				results.classList.add("snoop-dog");
+				results.classList.add("snoop-dogg");
 				body.background = "none";
 				body.backgroundColor = "#b89832";
                 body.backgroundSize = "100% auto";
-				printResult.innerText = "snoop-dog";
+				printResult.innerText = "snoop-dogg";
 				break;
 
 
