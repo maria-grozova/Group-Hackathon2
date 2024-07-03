@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <meta name="Description" content="Find out what type of dog you are based on your personality!">
+
+    <!---- Stylesheet import-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
-    <title>The Ultimatum Personality Quiz</title>
+    <!----- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon.ico">
+    <title>The Ultimutt Personality Quiz</title>
+
 </head>
+
 <body>
     <div class="container">
-        <div id="quiz">
-            <h1>The Ultimutt Personality Quiz</h1>
-            <br>
-            <div id="questions">Are you ready to start the quiz?<br><br><img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2R3MTJ6eTMzZmZkY2htdmNwcGhpdWdwdXEwOTU1c2s4MndnZTh1dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dudcZA9e14HIY/giphy.gif" alt="A dog dancing excitedly"></div>
-            <ul id="answers"></ul>
+
+        <!------Header-->
+        <header>
+            <div id="quiz">
+                <h1>The Ultimutt Personality Quiz</h1>
+        </header>
+        <!------Main quiz area-->
+        <br>
+        <section name="quiz-area">
+            <div id="questions">Are you ready to start the quiz?<br><br><img
+                    src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2R3MTJ6eTMzZmZkY2htdmNwcGhpdWdwdXEwOTU1c2s4MndnZTh1dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dudcZA9e14HIY/giphy.gif"
+                    alt="A dog dancing excitedly"></div>
+            <!------Answers selection-->
+            <ul id="answers">
+            </ul>
+
             <div style="clear:both"></div>
             <button id="button" class="button" aria-label="Start the quiz">Woof! (Start quiz)</button>
-        </div>
-        <div id="results">
-            <h1>You are a.....<span id="topScore"></span>!!!!</h1>
-            <div style="clear:both"></div>
-            <div id="img1"><img src="" alt="Result Dog GIF" id="resultDogGif"></div>
-            <div id="desc1"></div>
-            <br>
-            <p><a href="index.html" class="button" aria-label="Restart the quiz">Restart quiz</a></p>
-        </div>
-        <div id="error">
-            <p>There was an error. Please try again</p>
-        </div>
     </div>
+    <!-------Results section-->
+    <div id="results">
+        <h1>You are a.....<span id="topScore"></span>!!!!</h1>
+        <div style="clear:both"></div>
+        <div id="img1"><img src="" alt="Result Dog GIF" id="resultDogGif"></div>
+        <div id="desc1"></div>
+        <br>
+        <p><a href="index.html" class="button" aria-label="Restart the quiz">Restart quiz</a></p>
+    </div>
+    </section>
+    <div id="error">
+        <p>There was an error. Please try again</p>
+    </div>
+    </div>
+    <!------Javascript import-->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
+
+

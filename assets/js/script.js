@@ -1,3 +1,4 @@
+
 /* QUIZ STATE AND VARIABLES */
 let currentQuestionIndex = 0;  // Tracks user's current question index
 let isQuizActive = true;       // Boolean to check if the quiz is still ongoing
@@ -11,7 +12,7 @@ let dogPersonalityScores = [   // Array to hold scores for each dog personality 
     0,  // business dog
     0,  // sport dog
     0,  // artist dog
-    0   // snoop dog
+    0   // snoop dogg
 ];
 
 let currentSelectionScores = dogPersonalityScores;  // Temporary array to store scores for the current selection
@@ -42,7 +43,7 @@ const answerText = [
      "‘Gold Digger’ by Kanye West feat. Jamie Foxx", "'Eye of the Tiger' by Survivor",
      "'Applause' by Lady Gaga", "'Drop It Like It's Hot' by Snoop Dogg"],                     
     ["Life in the VIP Lane", "Eat, Pray, Eat", "Fierce, Fresh and Fabulous",                    // q4 answers
-     "Amped for Life", "<Element> of Surprise", "Path to Ultimate Success",
+     "Amped for Life", "Element of Surprise", "Path to Ultimate Success",
      "Ultimate Win: One Pint at a Time", "Making Your Joy", "That's Dope, Fo Shizzle"],        
     ["Getting down on the dance floor", "Walking to the front door to get my Deliveroo",        // q5 answers
      "Puppy yoga", "Water sports", "404 - answer not found", "Golf", "A game of footie",
@@ -222,9 +223,9 @@ function displayResultPage(personality) {
             embedCode = '<iframe src="https://giphy.com/embed/oLh9Wmf10GKNq" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/assistant-painter-eyebleach-oLh9Wmf10GKNq">via GIPHY</a></p>';
             dogType = "artist-dog";
             break;
-        case 8: // snoop dog
+        case 8: // snoop dogg
             embedCode = '<iframe src="https://giphy.com/embed/dakmFeWHG8ZJFJQLFG" width="480" height="432" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/buzzfeed-buzzfeed-celeb-puppies-puppy-interview-dakmFeWHG8ZJFJQLFG">via GIPHY</a></p>';
-            dogType = "snoop-dog";
+            dogType = "snoop-dogg";
             break;
         default:
             document.getElementById("error").style.display = "inline-block";
@@ -243,3 +244,4 @@ function displayResultPage(personality) {
 function resetTempScores() {
     currentSelectionScores = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 }
+
