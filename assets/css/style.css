@@ -1,86 +1,494 @@
-/*********General styles*/
-
-* {
-    padding: 0;
+html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
     margin: 0;
-}
-
-body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #b89832;
+    background: -moz-linear-gradient(top, #b89832 0%, #b89832 99%);
+    background: -webkit-linear-gradient(top, #b89832 0%, #b89832 99%);
+    background: linear-gradient(to bottom, #b89832 0%, #b89832 99%);
+    text-align: center;
+    color: #ffffff;
+  }
+  #container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-#quiz-area {
-    display:flex;
-    flex-direction: column;
-    max-width: 800px;
-    text-align: center;
-}
-
-#answers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
-
-.hide {
-    display: none;
-}
-
-
-/*********Opening card*/
-
-#landing-page {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    overflow: hidden; 
-}
-::backdrop {
-    background-image: linear-gradient(
-    45deg,
-    magenta,
-    rebeccapurple,
-    dodgerblue,
-    green
-  );
-  opacity: 0.75;
-}
-
-/*********Quiz area*/
-
-.answer-card {
-    width: 5em;
-    height: 5em;
-    flex: 1 1 25.5%;
-    outline: 1px solid;
-    margin: 5px;
-}
-
-#questions {
+    justify-content: start;
+  }
+  h1 {
+      font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 1.8em;
+  }
+  h2 {
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     font-size: 1.5em;
+  }
+  #quiz {
+      font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+      max-width: 800px;
+      margin: auto;
+  }
+  #questions {
+      font-size: 1.2em;
+  }
+  #answers {
+      list-style-type: none;
+      margin: 25px 0 0 0;
+      padding: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: 10px;
+  }
+  #answers li {
+      float: left;
+      margin: 0px 15px 15px 0px;
+      width: 200px;
+      height: 150px;
+      position: relative;
+  }
+  #answers label, #answers input {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  #answers input[type="radio"] {
+      opacity: 0.011;
+      z-index: 100;
+  }
+  #answers input[type="radio"]:checked + label {
+      opacity: 1;
+      color: #000000;
+      font-weight: bold;
+      border: 3px solid #000000;
+  }
+  #answers label {
+      padding: 5px;
+      border: 2px solid #fff;
+      cursor: pointer;
+      z-index: 90;
+      opacity: 0.7;
+      transition: opacity 0.2s linear;
+  }
+  #answers label:hover {
+      opacity: 1;
+  }
+  .button {
+      border: 2px solid #fff;
+      margin: 0.5em;
+      padding: 0.5em;
+      display: inline-block;
+      background-color: darkblue;
+      text-transform: uppercase;
+      padding: 10px;
+      color: #ffffff;
+  }
+  .button:hover {
+      cursor: pointer;
+  }
+  #results {
+      display: none;
+  }
+  #error {
+      display: none;	
+      }
+      
+  /*DOGS */	
+  /* party-dog */
+  .party-dog {
+      font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #ffffff;
+      cursor:  pointer;
+  }
+  .party-dog h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .party-dog a {
+      color:  green;
+      font-weight: bold;
+      font-size: 1.5em;
+      margin: 0 10px 0 20px;
+      }
+  .party-dog a:hover {
+      background-color: #b89832;
+      cursor:  pointer;
+  }
+  .party-dog div[id^='img'] {
+      border: solid #b89832;
+      margin-right: 10px;
+      width: 80%;
+      display: inline-block;
+  }
+  .party-dog #img1 {
+      content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9zZHcwd3A0enplaWEzcGt6dHB1d3huODJ6aW56M2JvajRwc3JscCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eB4iKBxl84RGZdF65g/giphy.gif'); 
+    }
+  .party-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a party dog and are the life and soul of a party and always wants to go out...";
+}
+  /* food-dog styles */     
+  .food-dog {
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #ffffff;
+  }
+  .food-dog h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .food-dog a {
+    color:  green;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 10px 0 20px;
+}
+  .food-dog a:hover {
+    background-color: #b89832;
+    cursor:  pointer;
+  }
+  .food-dog div[id^='img'] {
+    border: solid #b89832;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+  .food-dog #img1 {
+      content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjc3YmN5ZDR5YzNiNmo1cXZ2eHpnejllNmhzZGJxMTRldm1xY3R3ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9fuvOqZ8tbZOU/giphy-downsized-large.gif');
+  }
+  .food-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a food dog who likes your doggy bowl always full of treats...";
+}     
+  /* fashion-dog styles */      
+  .fashion-dog {
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #ffffff;
+  }
+  .fashion-dog h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .fashion-dog a {
+    color:  green;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 10px 0 20px;
+}
+  .fashion-dog a:hover {
+    background-color: #b89832;
+    cursor:  pointer;
+  }
+  .fashion-dog div[id^='img'] {
+    border: solid #b89832;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+  .fashion-dog #img1 {
+      content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmJ4ZXE5bTg0ODBodzVlMjRmMTJhcW9nOTljeDZmN2M4dGpvd3BxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5AlU8U5mHf0AJFc5oq/giphy-downsized-large.gif');
+  }
+  .fashion-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a fashion dog who can be seen in parks wearing the latest dog blanket and accessories...";
+}
+  
+  /* surf-dog styles */      
+  .surf-dog {
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #ffffff;
+  }
+  .surf-dog h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .surf-dog h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .surf-dog a {
+    color:  green;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 10px 0 20px;
+}
+  .surf-dog a:hover {
+    background-color: #b89832;
+    cursor:  pointer;
+  }
+  .surf-dog div[id^='img'] {
+    border: solid #b89832;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+  .surf-dog #img1 {
+      content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGN5YjF2dGNhYzVjMW1zaXJ0NHM0bTBjZDd0MHJla200dGI0MWZzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9D8SldWd6lmVbHwRB1/giphy-downsized-large.gif');
+  }
+  .surf-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a surf dog who can be found on the beach on weekends...";
+}
+      
+  /* dev-dog styles */
+  .dev-dog {
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #ffffff;
+  }
+  .dev-dog h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .dev-dog a {
+    color:  green;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 10px 0 20px;
+}
+  .dev-dog a:hover {
+    background-color: #b89832;
+    cursor:  pointer;
+  }
+  .dev-dog div[id^='img'] {
+    border: solid #b89832;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+  .dev-dog #img1 {
+      content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnJudmowNWVyM3M1NTJ5eDJxazlsdGtsbXphZGZlMGRnanlnN3A0byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1kkxWqT5nvLXupUTwK/giphy.gif');
+  }
+  .dev-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a dev dog who loves getting your teeth into code as much as bones...";
 }
 
-#submit-button {
-    margin: 20px 0 5px;
+  /* business-dog styles */     
+  .business-dog {
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #ffffff;
+  }
+  .business-dog h1 {
+      font-size: 2em;
+      animation: blinker 0.5s linear infinite;
+      font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+  }
+   @keyframes blinker {
+   50% {
+  opacity: 0;
+  }
+  }
+  .business-dog a {
+    color:  green;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 10px 0 20px;
+}
+  .business-dog a:hover {
+    background-color: #b89832;
+    cursor:  pointer;
+  }
+  .business-dog div[id^='img'] {
+    border: solid #b89832;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+  .business-dog #img1 {
+      content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWdkZmI0eDA1YzJkb2trMjZwZDMwbDh5OWtydWExeXR3ZDEwbWl4MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/irBRf1pU2hqDj73DKm/giphy.gif');
+  }
+  .business-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a business dog who likes checking out the financial markets as much as you do playing catch...";
 }
 
-#next-button {
-    margin: 5px 0;
+/* sport-dog styles */     
+    .sport-dog {
+        font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+        font-size: 1.4em;
+        text-align: center;
+        color: #ffffff;
+    }
+    .sport-dog h1 {
+        font-size: 2em;
+        animation: blinker 0.5s linear infinite;
+        font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+    }
+     @keyframes blinker {
+     50% {
+    opacity: 0;
+    }
+    }
+    .sport-dog a {
+        color:  green;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin: 0 10px 0 20px;
+      }
+    .sport-dog a:hover {
+        background-color: #b89832;
+        cursor:  pointer;
+    }
+    .sport-dog div[id^='img'] {
+        border: solid #b89832;
+        margin-right: 10px;
+        width: 80%;
+        display: inline-block;
+      }
+    .sport-dog #img1 {
+        content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGNxeDFqNzJ1Y3RxcGYzcGpwNzJjbTJ2Z2ZvNDYwM21ybWl3amh6NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qseAluIreBnfLgsLpt/giphy.gif');
+    }
+    .sport-dog #desc1::after {
+        font-size: 0.9em;
+        content: "You are a sport dog that loves playing any game involving a ball...";
+    }
+    
+/* artist-dog styles */     
+.artist-dog {
+    font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #ffffff;
+}
+.artist-dog h1 {
+    font-size: 2em;
+    animation: blinker 0.5s linear infinite;
+    font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+}
+ @keyframes blinker {
+ 50% {
+opacity: 0;
+}
+}
+.artist-dog a {
+    color:  green;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 10px 0 20px;
+}
+.artist-dog a:hover {
+    background-color: #b89832;
+    cursor:  pointer;
+}
+.artist-dog div[id^='img'] {
+    border: solid #b89832;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.artist-dog #img1 {
+    content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc21jMnE3bDRmeHBzMzlrYjVybGd0cndmejJrdTVyZHV1MHQ0bjR5bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oLh9Wmf10GKNq/giphy-downsized-large.gif');
+}
+.artist-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are an artist dog who is super creative and redesigning the home furntiture...";
 }
 
-#question-count {
-    align-self: flex-start;
-    padding-left: 10px;
+/* snoop-dog styles */     
+.snoop-dog {
+    font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: #ffffff;
+}
+.snoop-dog h1 {
+    font-size: 2em;
+    animation: blinker 0.5s linear infinite;
+    font-family:  "Comic Sans MS", "Comic Sans", sans-serif;
+}
+ @keyframes blinker {
+ 50% {
+opacity: 0;
+}
+}
+.snoop-dog a {
+    color:  green;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 10px 0 20px;
+}
+.snoop-dog a:hover {
+    background-color: #b89832;
+    cursor:  pointer;
+}
+.snoop-dog div[id^='img'] {
+    border: solid #b89832;
+    margin-right: 10px;
+    width: 80%;
+    display: inline-block;
+}
+.snoop-dog #img1 {
+    content: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXE2NnRrbHFwMm9uaW16ZmVkdmVxbnNxNWxjOWVueHl4OTc2eGlnYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dakmFeWHG8ZJFJQLFG/giphy.gif');
+}
+.snoop-dog #desc1::after {
+    font-size: 0.9em;
+    content: "You are a snoop dog who is chilled out and really likes grass...";
 }
 
-/**********Footer*/
-footer {
-    position: fixed;
-    bottom: 0;
-    font-size: 0.5em;
-    text-align: right;
-}
-
+/* CSS for up to 992*/
+  @media screen and (max-width: 992px) {
+    #answers li {
+        font-size:0.6em;
+        float: left;
+        margin: 0px 15px 15px 0px;
+        width: 100%;
+        height: 50px;
+        position: relative;
+    }
+  }​
