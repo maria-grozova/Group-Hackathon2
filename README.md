@@ -21,6 +21,9 @@
 
 Designing a fully interactive personality quiz website using HTML, CSS and JavaScript.
 
+External user's goal: The site’s users want to play a humorous online quiz with a personality assessment.\
+Site owner's goal: The goal of the site is to provide a well-functioning funny quiz to entertain online users.
+
 ## Project Board
 Github Project Board: https://github.com/maria-grozova/The-Ultimutt-Personality-Quiz
 
@@ -48,11 +51,21 @@ Reponsive Wireframes - Website design skeleton to be responsive on all sites.
 
  ![image] (https://github.com/maria-grozova/The-Ultimutt-Personality-Quiz/assets/images/questions_matrix_logic.png)
 
- 
+ There are 9 possible quiz outcomes.\
+ For each question, there are 9 answer options that correspond directly to a related outcome.\
+ To begin with, each user will be assigned a score of [0, 0, 0, 0, 0, 0, 0, 0, 0].\
+ The questions and answers are stored in arrays in JavaScript, each answer is assigned a corresponding value using a separate array.\
+ After each submitted response, the user's score will be updated using assigned values.\
+ At the end, the outcome with the highest corresponding score decides which result gets shown to the user.\
+ N.B. If the top score is equal between two or more outcome options, the result served is the top scoring outcome that appears in the array first.
 
 ## Features
 
 ![image](https://github.com/maria-grozova/The-Ultimutt-Personality-Quiz/assets/images/questions-live-site.png)
+
+A landing page welcoming the user with CTA to start the quiz.\
+Quiz page with dynamically updated questions and answer options.\
+Result page that displays a result based on user submission.
 
 Complete 10 questions to find out what type of dog personality you are. 
 
@@ -84,13 +97,17 @@ CSS - No errors were found when passing through the official validator \
 JS HINT - No Warnings
 
 ## Credits
-Authors of the Project
-Maria Grozova - Project Lead
-Hugh Carey
+Authors of the Project:\
+Maria Grozova - Project Lead,\
+Hugh Carey,\
 Jamie Pudsey
 
 ## Content Credit
 Miro for Wireframes\
+Pexels for image\ 
+_____
+(https://www.pexels.com/photo/photo-of-different-puppies-3299905/)
+_____
 GIPHY for images
 _____
 
