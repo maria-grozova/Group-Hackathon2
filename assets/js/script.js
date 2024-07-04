@@ -249,7 +249,7 @@ function displayResultPage(personality) {
     document.getElementById("img1").innerHTML = embedCode;  // set the embed code for the GIF
     printResult.innerText = dogType;
     printMessage.innerText = dogMessage;
-    results.style.display = "inline-block";
+    results.style.display = "flex";
     body.background = "none";
     body.backgroundColor = "#FEF9EF";
     body.backgroundSize = "100% auto";
