@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 /* QUIZ STATE AND VARIABLES */
 let currentQuestionIndex = 0;  // Tracks user's current question index
 let isQuizActive = true;       // Boolean to check if the quiz is still ongoing
@@ -149,7 +151,7 @@ function setAnswer(input) {
     } else {
         // All questions answered
         isQuizActive = false;
-        buttonElement.innerHTML = "Display your dog type"
+        buttonElement.innerHTML = "Display your dog type";
         buttonElement.disabled = false;
         buttonElement.style.opacity = 1;
     }
