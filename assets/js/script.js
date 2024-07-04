@@ -110,6 +110,7 @@ buttonElement.addEventListener("click", changeState);  // Add click event listen
 
 /* This function progresses the user through the quiz */
 function changeState() {
+    window.scrollTo(0, 0);
     updatePersonality();  // Adds the values of the tempStats to the userStats
 
     if (isQuizActive) {
@@ -189,11 +190,13 @@ function showResultPage() {
     quiz.style.display = "none";
 }
 
-/* BUILDS WEB PAGE AS PER RESULTS OF THE QUIZ */
+/* SHOWS DOG CARD AS PER RESULTS OF THE QUIZ */
 function displayResultPage(personality) {
     let embedCode;
     let dogType;
     let dogMessage;
+
+    window.scrollTo(0, 0);
 
     switch (personality) {
         case 0: // party dog
