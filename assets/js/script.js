@@ -99,6 +99,7 @@ const results = document.getElementById("results");
 const quiz = document.getElementById("quiz");
 const body = document.body.style;
 const printResult = document.getElementById("topScore");
+const printMessage = document.getElementById("topMessage");
 const buttonElement = document.getElementById("button");
 
 /* QUIZ FUNCTIONALITY */
@@ -189,43 +190,53 @@ function showResultPage() {
 function displayResultPage(personality) {
     let embedCode;
     let dogType;
+    let dogMessage;
 
     switch (personality) {
         case 0: // party dog
             embedCode = '<iframe src="https://giphy.com/embed/eB4iKBxl84RGZdF65g" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/devxart-cachorro-dana-danando-eB4iKBxl84RGZdF65g">via GIPHY</a></p>';
             dogType = "party-dog";
+            dogMessage = "You are a party dog and loves to be out and about...";
             break;
         case 1: // food dog
             embedCode = '<iframe src="https://giphy.com/embed/9fuvOqZ8tbZOU" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/happiness-9fuvOqZ8tbZOU">via GIPHY</a></p>';
             dogType = "food-dog";
+            dogMessage = "You are a food dog and love trying out new restaurants and cuisines.";
             break;
         case 2: // fashion dog
             embedCode = '<iframe src="https://giphy.com/embed/5AlU8U5mHf0AJFc5oq" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/americankennelclub-akc-american-kennel-club-toy-dog-5AlU8U5mHf0AJFc5oq">via GIPHY</a></p>';
             dogType = "fashion-dog";
+            dogMessage = "You are a fashion dog and always stay on top of the latest trends.";
             break;
         case 3: // surf dog
             embedCode = '<iframe src="https://giphy.com/embed/9D8SldWd6lmVbHwRB1" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wsl-surf-9D8SldWd6lmVbHwRB1">via GIPHY</a></p>';
             dogType = "surf-dog";
+            dogMessage = "You are a surf dog and love catching waves and spending time at the beach.";
             break;
         case 4: // dev dog
             embedCode = '<iframe src="https://giphy.com/embed/1kkxWqT5nvLXupUTwK" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/youtube-best-seriously-1kkxWqT5nvLXupUTwK">via GIPHY</a></p>';
             dogType = "dev-dog";
+            dogMessage = "You are a dev dog and love coding and building new projects.";
             break;
         case 5: // business dog
             embedCode = '<iframe src="https://giphy.com/embed/irBRf1pU2hqDj73DKm" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/GeorgetownUniversity-bulldog-bull-dog-georgetown-university-irBRf1pU2hqDj73DKm">via GIPHY</a></p>';
             dogType = "business-dog";
+            dogMessage = "You are a business dog and have a sharp mind for the corporate world.";
             break;
         case 6: // sport dog
             embedCode = '<iframe src="https://giphy.com/embed/qseAluIreBnfLgsLpt" width="480" height="266" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nfl-sports-football-sport-qseAluIreBnfLgsLpt">via GIPHY</a></p>';
             dogType = "sport-dog";
+            dogMessage = "You are a sport dog and love staying active and playing sports.";
             break;
         case 7: // artist dog
             embedCode = '<iframe src="https://giphy.com/embed/oLh9Wmf10GKNq" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/assistant-painter-eyebleach-oLh9Wmf10GKNq">via GIPHY</a></p>';
             dogType = "artist-dog";
+            dogMessage = "You are an artist dog and love expressing creativity through art.";
             break;
         case 8: // snoop dogg
             embedCode = '<iframe src="https://giphy.com/embed/dakmFeWHG8ZJFJQLFG" width="480" height="432" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/buzzfeed-buzzfeed-celeb-puppies-puppy-interview-dakmFeWHG8ZJFJQLFG">via GIPHY</a></p>';
             dogType = "snoop-dogg";
+            dogMessage = "You are Snoop Dogg and have a laid-back, chill attitude.";
             break;
         default:
             document.getElementById("error").style.display = "inline-block";
@@ -234,6 +245,7 @@ function displayResultPage(personality) {
 
     document.getElementById("img1").innerHTML = embedCode;  // set the embed code for the GIF
     printResult.innerText = dogType;
+    printMessage.innerText = dogMessage;
     results.style.display = "inline-block";
     body.background = "none";
     body.backgroundColor = "#FEF9EF";

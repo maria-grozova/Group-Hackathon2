@@ -27,6 +27,9 @@ h1 {
 h2 {
     font-size: 1.5em;
 }
+h3 {
+    font-size: 1em;
+}
 #quiz {
     font-family: 'Roboto', sans-serif;
     max-width: 800px;
@@ -134,10 +137,6 @@ font-size: 1em;
     width: 80%;
     display: inline-block;
 }
-.party-dog #desc1::after {
-    font-size: 0.9em;
-    content: "You are a party dog and are the life and soul of a party and always wants to go out...";
-}
 
 /* food-dog */
 .food-dog {
@@ -155,10 +154,6 @@ font-size: 1em;
     margin-right: 10px;
     width: 80%;
     display: inline-block;
-}
-.food-dog #desc1::after {
-    font-size: 0.9em;
-    content: "You are a food dog and love trying out new restaurants and cuisines.";
 }
 
 /* fashion-dog */
@@ -178,10 +173,6 @@ font-size: 1em;
     width: 80%;
     display: inline-block;
 }
-.fashion-dog #desc1::after {
-    font-size: 0.9em;
-    content: "You are a fashion dog and always stay on top of the latest trends.";
-}
 
 /* surf-dog */
 .surf-dog {
@@ -199,10 +190,6 @@ font-size: 1em;
     margin-right: 10px;
     width: 80%;
     display: inline-block;
-}
-.surf-dog #desc1::after {
-    font-size: 0.9em;
-    content: "You are a surf dog and love catching waves and spending time at the beach.";
 }
 
 /* dev-dog */
@@ -222,10 +209,6 @@ font-size: 1em;
     width: 80%;
     display: inline-block;
 }
-.dev-dog #desc1::after {
-    font-size: 0.9em;
-    content: "You are a dev dog and love coding and building new projects.";
-}
 
 /* business-dog */
 .business-dog {
@@ -243,10 +226,6 @@ font-size: 1em;
     margin-right: 10px;
     width: 80%;
     display: inline-block;
-}
-.business-dog #desc1::after {
-    font-size: 0.9em;
-    content: "You are a business dog and have a sharp mind for the corporate world.";
 }
 
 /* sport-dog */
@@ -266,10 +245,6 @@ font-size: 1em;
     width: 80%;
     display: inline-block;
 }
-.sport-dog #desc1::after {
-    font-size: 0.9em;
-    content: "You are a sport dog and love staying active and playing sports.";
-}
 
 /* artist-dog */
 .artist-dog {
@@ -287,10 +262,6 @@ font-size: 1em;
     margin-right: 10px;
     width: 80%;
     display: inline-block;
-}
-.artist-dog #desc1::after {
-    font-size: 0.9em;
-    content: "You are an artist dog and love expressing creativity through art.";
 }
 
 /* snoop-dogg */
@@ -310,10 +281,7 @@ font-size: 1em;
     width: 80%;
     display: inline-block;
 }
-.snoop-dogg #desc1::after {
-    font-size: 0.9em;
-    content: "You are Snoop Dogg and have a laid-back, chill attitude.";
-}
+
 /********Media queries*/
 @media screen and (max-width: 992px) {
     #answers li {
