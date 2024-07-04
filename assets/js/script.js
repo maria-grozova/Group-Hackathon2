@@ -124,6 +124,9 @@ function changeState() {
         // All questions answered
         showResultPage();  // runs set up for result page
     }
+
+    window.scrollTo(0, 0);
+    
 }
 
 /* This function determines the question and answer content based on user progress through the quiz */
