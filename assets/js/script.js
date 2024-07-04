@@ -119,7 +119,7 @@ function changeState() {
 
         buttonElement.disabled = true;  // disables button until user chooses next answer
         buttonElement.innerHTML = "Please select an answer";
-        buttonElement.style.opacity = 0.7;
+        buttonElement.style.opacity = 1;
     } else {
         // All questions answered
         showResultPage();  // runs set up for result page
