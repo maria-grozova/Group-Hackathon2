@@ -132,7 +132,7 @@ function initText(question) {
     let answerSelection = ""; // text variable containing HTML code for the radio buttons' content
 
     // Creates radio buttons based on user progress through the quiz
-    for (i = 0; i < answerText[question].length; i++) {
+    for (let i = 0; i < answerText[question].length; i++) {
         answerSelection += "<li><input type='radio' name='question" +
             (question + 1) + "' onClick='setAnswer(" + i + ")' id='" + answerText[question][i] + "'><label for='" + answerText[question][i] + "'>" + answerText[question][i] + "</label></li>";
     }
@@ -168,7 +168,7 @@ function resetTempScores() {
 
 /* This function adds the values of the tempScores to the userScores based on user selection */
 function updatePersonality() {
-    for (i = 0; i < dogPersonalityScores.length; i++) {
+    for (let i = 0; i < dogPersonalityScores.length; i++) {
         dogPersonalityScores[i] += currentSelectionScores[i];
     }
 }
@@ -178,7 +178,7 @@ function showResultPage() {
     let highestScoreIndex = 0;  // highest stat defaults as 'party dog'
 
     // This statement loops through all personality stats and updates highestScoreIndex based on the highest stat
-    for (i = 1; i < dogPersonalityScores.length; i++) {
+    for (let i = 1; i < dogPersonalityScores.length; i++) {
         if (dogPersonalityScores[i] > dogPersonalityScores[highestScoreIndex]) {
             highestScoreIndex = i;
         }
