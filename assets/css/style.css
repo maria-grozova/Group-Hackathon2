@@ -32,10 +32,19 @@ h2 {
 h3 {
     font-size: 1em;
 }
+
+img {
+    overflow: hidden;
+    max-width: 665px;
+}
+
 #quiz {
     font-family: 'Roboto', sans-serif;
     max-width: 800px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .quiz-area {
@@ -81,9 +90,10 @@ font-size: 1em;
 
 #answers input[type="radio"]:checked + label {
     opacity: 1;
-    color: #424B54; 
+    color: #FEF9EF; 
     font-weight: bold;
-    border: 3px solid #FE6D73; 
+    border: 3px solid #424B54; 
+    background-color: #2e776d;
 }
 
 #answers label {
@@ -111,7 +121,7 @@ font-size: 1em;
 #button:hover {
     cursor: pointer;
     background-color: #FE6D73; 
-    color: #424B54;
+    color: black;
     opacity: 1;
 }
 #results {
