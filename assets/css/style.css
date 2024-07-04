@@ -121,7 +121,7 @@ font-size: 1em;
 #button:hover {
     cursor: pointer;
     background-color: #FE6D73; 
-    color: black;
+    color: #424B54;
     opacity: 1;
 }
 #results {
